@@ -1,0 +1,16 @@
+.card-image {
+  height: 70px;
+  width: auto;
+}
+
+.custom-card {
+  width: 400px;
+  border-top-left-radius: 50px;
+}
+
+.custom-card:hover {
+  .box-shadow-cyan {
+    box-shadow: 0 0 40px -16px var(--teal-500);
+  }
+}
+

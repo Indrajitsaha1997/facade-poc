@@ -1,0 +1,21 @@
+<p class="my-20 text-end" routerLink="./create-todo"><p-button label="Create Task"></p-button></p>
+<div class="card" *ngIf="todos$ | async as x">
+  <p-table [value]="x" [tableStyle]="{ 'min-width': '80vw' }">
+      <ng-template pTemplate="header">
+          <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-data>
+          <tr>
+              <td>{{ data?.id }}</td>
+              <td>{{ data?.todo }}</td>
+              <td>{{ data?.completed ? 'Done':'Pending' }}</td>
+              <td>{{ data?.userId }}</td>
+          </tr>
+      </ng-template>
+  </p-table>
+</div>  

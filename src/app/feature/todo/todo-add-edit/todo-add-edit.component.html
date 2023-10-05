@@ -1,0 +1,25 @@
+<div class="card flex justify-content-center p-20">
+  <p-card header="Create Todo">
+    <div class="flex flex-column">
+      <label htmlFor="taskName">Task Name</label>
+      <input pInputText type="text" id="taskName" formControlName="text" />
+    </div>
+    <div class="flex flex-column my-20">
+      <label htmlFor="taskDescription">Description</label>
+      <input pInputText type="text" id="taskDescription" formControlName="text" />
+    </div>
+    <div class="flex flex-column my-20">
+      <label htmlFor="taskDescription">Assign User</label>
+      <p-dropdown formControlName="city" optionLabel="name"></p-dropdown>
+      <!-- [options]="cities" -->
+    </div>
+    <div class="flex flex-row text-end my-20">
+      <div class="flex-column">
+        <p-button label="Submit" styleClass="p-button-link" routerLink="/todos"></p-button>
+      </div>
+      <div class="flex-column">
+        <p-button label="Create Task" styleClass="p-button-raised"></p-button>
+      </div>
+    </div>
+  </p-card>
+</div>
