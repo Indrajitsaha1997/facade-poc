@@ -1,6 +1,6 @@
 <p class="my-20 text-end" routerLink="./create-todo"><p-button label="Create Task"></p-button></p>
-<div class="card" *ngIf="todos$ | async as x">
-  <p-table [value]="x" [tableStyle]="{ 'min-width': '80vw' }">
+<div class="card" *ngIf="todos$ | async as todo">
+  <p-table [value]="todo" [tableStyle]="{ 'min-width': '80vw' }">
       <ng-template pTemplate="header">
           <tr>
               <th>Code</th>

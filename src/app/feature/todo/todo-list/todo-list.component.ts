@@ -7,16 +7,10 @@ import { TodosFacade } from 'src/app/data-access/todo/facade/todo.facade';
 })
 export class TodoListComponent {
   todos$ = this.todoFacade.allTodos$;
-  // todoList: any;
   constructor(private todoFacade: TodosFacade) {
   }
   ngOnInit() {
     this.todoFacade.loadAllTodo();
-    // this.todos$.subscribe((res) => {
-    //   this.todoList = res;
-    //   console.log(this.todoList)
-    // });
-    // console.log(t)
   }
 
 }

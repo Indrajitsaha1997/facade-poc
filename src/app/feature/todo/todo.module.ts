@@ -10,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
+import { SkeletonModule } from 'primeng/skeleton';
 @NgModule({
   declarations: [
     TodoAddEditComponent,
@@ -22,7 +23,8 @@ import { DropdownModule } from 'primeng/dropdown';
     ButtonModule,
     CardModule,
     InputTextModule,
-    DropdownModule
+    DropdownModule,
+    SkeletonModule
   ]
 })
 export class TodoModule { }
